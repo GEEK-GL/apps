@@ -17,6 +17,7 @@ import chainCoinversation from './chains/coinversation.png';
 import chainCompetitorsClub from './chains/competitors-club.png';
 import chainComposableFinance from './chains/composableFinance.png';
 import chainCrownSterling from './chains/crown-sterling.png';
+import chainRoccoDataHighway from './chains/datahighway.png';
 import chainEfinity from './chains/efinity.svg';
 import chainEquilibrium from './chains/equilibrium.svg';
 import chainGeminis from './chains/geminis.png';
@@ -42,12 +43,14 @@ import chainShiden from './chains/shiden.png';
 import chainSnakenet from './chains/snakenet.svg';
 import chainSpanner from './chains/spanner.png';
 import chainStandard from './chains/standard.png';
+import chainTuring from './chains/turing.png';
 import chainUnique from './chains/unique.svg';
 import chainUnorthodox from './chains/unorthodox.png';
 import extensionPolkadotJs from './extensions/polkadot-js.svg';
 import externalCommonwealth from './external/commonwealth.png';
 import externalDotreasury from './external/dotreasury.svg';
 import externalDotScanner from './external/dotscanner.png';
+import externalKodaDot from './external/kodadot.png';
 import externalPolkascan from './external/polkascan.png';
 import externalPolkassembly from './external/polkassembly.png';
 import externalPolkastats from './external/polkastats.png';
@@ -111,6 +114,7 @@ import nodeLitmus from './nodes/litmus.png';
 import nodeLoomNetwork from './nodes/loom_network.png';
 import nodeManta from './nodes/manta.png';
 import nodeMath from './nodes/math.svg';
+import nodeMinix from './nodes/minix.png';
 import moonbase from './nodes/moonbase_alpha.png';
 import moonbeam from './nodes/moonbeam.png';
 import moonriver from './nodes/moonriver.svg';
@@ -192,11 +196,12 @@ export const chainLogos = Object.entries({
   'Beast Developer': nodeBeast,
   Bifrost: nodeBifrost,
   'Bifrost Asgard CC4': nodeBifrost,
+  'Bifrost Stage Testnet': nodeBifrost,
   'Calamari Parachain': nodeCalamari,
   'Calamari Parachain Development': nodeCalamari,
   'Calamari Parachain Local': nodeCalamari,
   'Calamari Parachain Testnet': nodeCalamari,
-  Canvas: chainRococoCanvas,
+  'Canvas on Rococo': chainRococoCanvas,
   ChainX: nodeChainx,
   'Charcoal Testnet': nodeCentrifuge,
   Coinversation: chainCoinversation,
@@ -208,6 +213,7 @@ export const chainLogos = Object.entries({
   'Darwinia Crab PC2': nodeCrab,
   'Darwinia PC2': nodeDarwinia,
   DataHighway: nodeDataHighway,
+  'DataHighway Spreehafen Rococo Parachain Testnet': chainRoccoDataHighway,
   'Dolphin Testnet': nodeDolphin,
   Efinity: chainEfinity,
   Equilibrium: chainEquilibrium,
@@ -259,6 +265,8 @@ export const chainLogos = Object.entries({
   MathChain: nodeMath,
   'MathChain PC1': nodeMath,
   'mathchain-galois': nodeMath,
+  Minix: nodeMinix,
+  'Minix Testnet': nodeMinix,
   'Moonbase Alpha': moonbase,
   'Moonbase Development Testnet': moonbase,
   'Moonbase Stage': moonbase,
@@ -324,9 +332,11 @@ export const chainLogos = Object.entries({
   Trick: chainRococoTrick,
   trustbase: nodeTrustBase,
   'TrustBase PC1': nodeTrustBase,
+  turing: chainTuring,
   'uni arts staging network': nodeUniarts,
   'UniArts Mainnet': nodeUniarts,
   Unique: chainUnique,
+  UNIQUE: chainUnique,
   'Unit Network': nodeUnitv,
   Unorthodox: chainUnorthodox,
   Vln: nodeVln,
@@ -360,6 +370,7 @@ export const nodeLogos = Object.entries({
   'Beast Node': nodeBeast,
   Bifrost: nodeBifrost,
   'Bifrost Node': nodeBifrost,
+  'Bifrost Stage Testnet': nodeBifrost,
   'Bit Country Tewai Parachain Collator': nodeBitCountry,
   'Bit.Country': nodeBitCountry,
   'BitCountry Node': nodeBitCountry,
@@ -382,6 +393,7 @@ export const nodeLogos = Object.entries({
   DataHighway: nodeDataHighway,
   'DataHighway Node': nodeDataHighway,
   'DataHighway Parachain Collator': nodeDataHighway,
+  'DataHighway Spreehafen Rococo Parachain Testnet': chainRoccoDataHighway,
   'Dock Full Node': nodeDockMainnet,
   'DOTMog Node': nodeDotMog,
   'Eave Node': nodeEave,
@@ -422,6 +434,7 @@ export const nodeLogos = Object.entries({
   'Manta Parachain Collator': nodeManta,
   MathChain: nodeMath,
   'mathChain-galois': nodeMath,
+  minix: nodeMinix,
   Moonrock: nodeMoonrock,
   'Moonsama Development': chainMoonsamaDevelopment,
   'mybank.network': mybank,
@@ -543,6 +556,7 @@ export const namedLogos: Record<string, unknown> = {
   basilisk: nodeBasilisk,
   beast: nodeBeast,
   bifrost: nodeBifrost,
+  'Bifrost Stage Testnet': nodeBifrost,
   bitcountry: nodeBitCountry,
   bitcountryPioneer: nodePioneerNetwork,
   calamari: nodeCalamari,
@@ -606,6 +620,7 @@ export const namedLogos: Record<string, unknown> = {
   manta: nodeManta,
   mars: nodeAresMars,
   mathchain: nodeMath,
+  minix: nodeMinix,
   moonbaseAlpha: moonbase,
   moonbeam: moonbeam,
   moonriver: moonriver,
@@ -652,7 +667,6 @@ export const namedLogos: Record<string, unknown> = {
   rococoCrab: nodeCrab,
   rococoCrust: nodeCrust,
   rococoDarwinia: nodeDarwinia,
-  rococoDataHighway: nodeDataHighway,
   rococoEave: nodeEave,
   rococoEncointer: nodeEncointer,
   rococoGalital: nodeGalital,
@@ -679,6 +693,7 @@ export const namedLogos: Record<string, unknown> = {
   rococoPolkaFoundry: nodePolkaFoundry,
   rococoPrism: nodePrism,
   rococoSingLavender: nodeSingLavender,
+  rococoSpreehafen: chainRoccoDataHighway,
   rococoStandard: chainStandard,
   rococoStatemint: nodeStatemine,
   rococoSubDAO: nodeSubDAO,
@@ -720,6 +735,7 @@ export const namedLogos: Record<string, unknown> = {
   swapdex: nodeSwapdex,
   'ternoa-testnet': nodeTernoa,
   trustbase: nodeTrustBase,
+  turing: chainTuring,
   uniarts: nodeUniarts,
   unique: nodeUnique,
   unitv: nodeUnitv,
@@ -747,6 +763,7 @@ export const externalLogos: Record<string, unknown> = {
   commonwealth: externalCommonwealth,
   dotreasury: externalDotreasury,
   dotscanner: externalDotScanner,
+  kodadot: externalKodaDot,
   polkascan: externalPolkascan,
   polkassembly: externalPolkassembly,
   polkastats: externalPolkastats,

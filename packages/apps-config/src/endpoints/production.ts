@@ -73,10 +73,10 @@ export function createProduction (t: TFunction, firstOnly: boolean, withSort: bo
     },
     {
       info: 'crust',
-      isDisabled: true, // https://github.com/polkadot-js/apps/pull/6761
       text: t('rpc.prod.crust', 'Crust Network', { ns: 'apps-config' }),
       providers: {
-        'Crust Network': 'wss://rpc.crust.network'
+        'Crust Network': 'wss://rpc.crust.network',
+        OnFinality: 'wss://crust.api.onfinality.io/public-ws'
       }
     },
     {
@@ -179,6 +179,13 @@ export function createProduction (t: TFunction, firstOnly: boolean, withSort: bo
       providers: {
         MathWallet: 'wss://mathchain-asia.maiziqianbao.net/ws',
         'MathWallet Backup': 'wss://mathchain-us.maiziqianbao.net/ws'
+      }
+    },
+    {
+      info: 'minix',
+      text: t('rpc.prod.minix', 'MiniX', { ns: 'apps-config' }),
+      providers: {
+        ChainX: 'wss://minichain-mainnet.coming.chat/ws'
       }
     },
     {
